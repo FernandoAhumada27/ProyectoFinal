@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoFinal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+     emailjs.init('0hpmyab5i6fpDksEI')
+</script>
+</head>
+<body>
+    <header>
+        <img class="logotipoLuz" src="./img/LogotipoP.jpg">
+        <button class="menu-abierto" id="abrir"><i class="bi bi-three-dots-vertical"></i></button>
+        <nav class="nav" id="nav">
+            
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <ul class="nav-lista" >
+                <li><a href="./inicio.html">Inicio</a></li>
+                <li><a href="./conoceme.html">Conoceme</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./tienda.html">Tienda</a></li>
+            </ul>
+            <section class="botones">
+                <a href="https://www.instagram.com/luzazulde/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100080797191491&locale=es_LA"><i class="bi bi-facebook"></i></a>
+            </section>
+            
+        </nav>
+    </header>
+    <section class="home" id="Home">
+        <div class="container">
+            <h2 class="subtitle">Mis servicios</h2>
+            <div class="container-table">
+                <div class="card-container">
+                    <figure>
+                        <img class="image1"  src="./img/Canalizadora_de_angeles.jpg" alt="">
+                    </figure>
+                    <div class="contenido">
+                    <h2>Canalizacion de Angeles</h2>
+                    <p>Una canalización de angeles es una guía que nos dan  los angelitos,te darán mensajes amorosos que te llenarán de paz y contención</p>
+                    <a class="bot" href="./tienda.html">Consultar precios</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                <figure>
+                    <img class="image2" src="./img/limpieza energetica.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                <h2>Limpieza energetica</h2>
+                <p>Está herramienta nos sirve para limpiar nuestra aura, y nuestro cuerpo de energías densas, que podemos agarrar en nuestro ir y venir diario</p>
+                <a class="bot" href="./tienda.html">Consultar precios</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <figure>
+                    <img class="image3" src="./img/Limpieza_de_casas.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                <h2>Limpieza energetica de lugares</h2>
+                <p>Está técnica sirve para limpiar  espacios energéticamente, como casas, negocios de energías densas, las casas se enferman por las discusiones, malos entendidos y se estanca la energía del lugar, el limpiar ayudará a que todo fluya y haya armonía</p>
+                <a class="bot" href="./tienda.html">Consultar precios</a>
+                </div>
+            </div>    
+            <div class="card-container">
+                <figure>
+                    <img class="image4" src="./img/LOS-7-CHAKRAS.png" alt="">
+                </figure>
+                <div class="contenido">
+                <h2>Armonizacion de chakras con pendulo</h2>
+                <p>A veces con nuestras emociones de baja vibración llamense, corajes, tristezas etc, nuestros chakras se desalinean y nos sentimos cansados, agotados, enfermos, para eso sirve alinear nuestros chakras esta técnica nos ayudará a sentirnos mucho mejor</p>
+                <a class="bot" href="./tienda.html">Consultar precios</a>
+                </div>
+            </div>    
+            <div class="card-container">
+                <figure>
+                    <img class="image5" src="./img/Oraculo.webp" alt="">
+                </figure>
+                <div class="contenido">
+                <h2>Lectura del Oraculo</h2>
+                <p>Es recibir guía de nuestros angeles, arcangeles y seres de luz. Esta técnica tiene como finalidad apoyarnos en nuestro camino y evolucion espiritual y toma de conciencia</p>
+                <a class="bot" href="./tienda.html">Consultar precios</a>
+                </div>
+            </div>    
+            <div class="card-container">
+                <figure>
+                    <img class="image6" src="./img/registrosakashicos.jpg.webp" alt="">
+                </figure>
+                <div class="contenido">
+                <h2>Lectura de registros Akashicos</h2>
+                <p>está es una herramienta que nos da acceso a las memorias de nuestra alma, al abrir nuestros registros nos mostrarán que está listo para sanar y trabajar. Es un camino de sanación para nuestra alma</p>
+                <a class="bot" href="./tienda.html">Consultar precios</a>
+                </div>
+            </div>        
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <form id="form">
+                        <div class="field">
+                            <label for="for_name">Nombre:</label>
+                            <input type="text" name="from_name" id="from_name">
+                        </div>
+                        <div class="field">
+                            <label for="mesaage">Mensaje:</label>
+                            <input type="text" name="message" id="message">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email_id" id="email_id">
+                        </div>
+                        <button type="submit" id="button" value="Send Email">
+                            Enviar<i class="bi bi-send"></i>
+                            <span class="overlay"></span>
+                        </button>
+
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <h2>Que la luz de los Ángeles te guíen</h2>
+                        <p>Lago Ness, Cantaros III, Nicolas Romero, Edo Mex. 54416</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="./funciones.js"></script>
+    <footer>
+        <h6>Proyecto elaborado por: Jesus Fernando Perez Ahumada</h6>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ProyectoFinal</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./estilos.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+        <script type="text/javascript">
+         emailjs.init('0hpmyab5i6fpDksEI')
+    </script>
+    </head>
+<body>
+    <header>
+        <img class="logotipoLuz" src="./img/LogotipoP.jpg">
+        <button class="menu-abierto" id="abrir"><i class="bi bi-three-dots-vertical"></i></button>
+        <nav class="nav" id="nav">
+            
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <ul class="nav-lista" >
+                <li><a href="./inicio.html">Inicio</a></li>
+                <li><a href="./conoceme.html">Conoceme</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./tienda.html">Tienda</a></li>
+            </ul>
+            <section class="botones">
+                <a href="https://www.instagram.com/luzazulde/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100080797191491&locale=es_LA"><i class="bi bi-facebook"></i></a>
+            </section>
+            
+        </nav>
+    </header>
+    <section class="contacto">
+        <div class="contenido-seccion">
+            <h1>De momento no tenemos servicio de compra</h1>
+            <h1>Mandenos un correo para ponernos en contacto con usted.</h1>
+            <h3>Contacto</h3>
+            <div class="fila">
+                <div class="col">
+                    <form id="form">
+                        <div class="field">
+                            <label for="for_name">Nombre:</label>
+                            <input type="text" name="from_name" id="from_name">
+                        </div>
+                        <div class="field">
+                            <label for="mesaage">Mensaje:</label>
+                            <input type="text" name="message" id="message">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email_id" id="email_id">
+                        </div>
+                        <button type="submit" id="button" value="Send Email">
+                            Enviar<i class="bi bi-send"></i>
+                            <span class="overlay"></span>
+                        </button>
+
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <h2>Que la luz de los Ángeles te guíen</h2>
+                        <p>Lago Ness, Cantaros III, Nicolas Romero, Edo Mex. 54416</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="./funciones.js"></script>
+    <footer>
+        <h6>Proyecto elaborado por: Jesus Fernando Perez Ahumada</h6>
+    </footer>
+</body>
+</html>
